@@ -1,8 +1,25 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>Welcome to GADDITE EXPRESS LLC</h1>
-<hr />
-<p>Your Satisfactory Is Our Priority</p>
+{% comment %} HOME {% endcomment %}
+<section class="home center" id="home">
+    <h1 class="">Welcome to GADDITE EXPRESS LLC</h1>
+    <hr />
+    <p class="prior center">Your Satisfactory Is Our Priority</p>
+</section>
+{% comment %} ABOUT {% endcomment %}
+<section class="about center" id="about">
+    <h2>About Us</h2>
+    <p>Since opening our doors, we've been committed to providing service of the highest quality</p>
+</section>
+{% comment %} CONTACT US {% endcomment %}
+<section class="contact"id="contact">
+    <h2 class="center">Contact Us</h2>
+    <div>
+        <p>Phone Number: <span><a href="tel:8888485220">(888)-848-5220</a></span></p>
+        <p>Email: <a href="mailto:" target="_blank" class="email">austin.wilson@gadditeexpressllc.com</a></p>
+        <p>Address: 3753 Howard Hughes Parkway Suite 200 Las Vegas, NV 89169</p>
+    </div>
+</section>
 
 {% endblock %}

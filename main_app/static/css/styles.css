@@ -1,12 +1,33 @@
 body {
-    background-color: red;
+    background: url("../images/truck.jpg");
+    background-size: cover;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
 
+/* home */
+.home h1 {
+    font-weight: 400;
+    margin: 50px 0 25px 0;
+}
+
+.home p {
+   font-size: 24px;
+   margin: 25px 0 25px 0;
+}
+
+.about h2 {
+    font-weight: 300;
+    margin: 40px 0 20px 0;
+}
+
+.contact h2 {
+    font-weight: 300;
+}
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
   
 main {
