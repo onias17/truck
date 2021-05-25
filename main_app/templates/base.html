@@ -21,7 +21,7 @@
     <nav class="black">
         <div class="nav-wrapper container">
             <a href="/" class="brand-logo center"><img class="" src="/static/images/gaddite-express.jpeg" alt="icon" width="65px"></a>
-            <ul class="right hide-on-med-and-down">
+            <ul class="options right hide-on-med-and-down">
                 <li><a href="/">Home</a></li>
                 <li><a href="/#about">About</a></li>
                 <li><a href="/#contact">Contact Us</a></li>
@@ -44,27 +44,7 @@
         <div class="right container">All Rights Reserved, &copy; 2021 Macabbee Marketing &nbsp;</div>
     </footer>
 
-  <button onclick="topFunction()" class="material-icons" id="myBtn" title="Go to top">keyboard_arrow_up</button>
+    <button class="material-icons" id="email"><a href=""></a> email</button>
 
-    <script>
-        const mobileEl = document.getElementById('mobile-demo');
-        M.Sidenav.init(mobileEl);
-
-        const mybutton = document.getElementById("myBtn");
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
 </body>
 </html>
