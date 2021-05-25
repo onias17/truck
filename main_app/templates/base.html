@@ -1,31 +1,70 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Cat Collector</title>
+  {% comment %} Main CSS {% endcomment %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  {% comment %} Materialize CSS {% endcomment %}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  {% comment %} Material Icons {% endcomment %}
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  {% comment %} Materialize JS {% endcomment %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <title>GADDITE EXPRESS</title>
 </head>
 <body>
-  <header class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper">
-        <ul>
-          <li><a href="/" class="left brand-logo">&nbsp;&nbsp;GADDITE EXPRESS LLC</a></li>
-        </ul>
-        <ul class="right">
-          <li><a href="/about">About</a></li>
-        </ul>
-      </div>
+    {% comment %} NAVBAR {% endcomment %}
+    <nav class="black">
+        <div class="nav-wrapper container">
+            <a href="/" class="brand-logo left"><img class="" src="/static/images/sot_icon1.png" alt="icon" width="65px"></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#contact">Contact Us</a></li>
+            </ul>
+
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#contact">Contact Us</a></li>
+            </ul>
+            <a href="#" data-target="mobile-demo" class="right sidenav-trigger" id=""><i class="material-icons">menu</i></a>
+        </div>
     </nav>
-  </header>
-  <main class="container">
-    {% block content %}
-    {% endblock %}
-  </main>
-  <footer class="page-footer">
-    <div class="right">All Rights Reserved, &copy; 2021 Macabbee Marketing &nbsp;</div>
-  </footer>
+
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="black page-footer">
+        <div class="right">All Rights Reserved, &copy; 2021 Macabbee Marketing &nbsp;</div>
+    </footer>
+
+  <button onclick="topFunction()" class="material-icons" id="myBtn" title="Go to top">keyboard_arrow_up</button>
+
+    <script>
+        const mobileEl = document.getElementById('mobile-demo');
+        M.Sidenav.init(mobileEl);
+
+        const mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 </html>
