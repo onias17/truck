@@ -26,3 +26,8 @@ def new_message(request):
                     'date_created': new_message.date_created,
                 }
             )
+            return render(request, 'messages/success.html')
+        else:
+            form = MessageForm()
+            context = { 'form' : form }
+            return render(request, 'messages/new.html', context)
