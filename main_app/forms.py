@@ -8,6 +8,5 @@ class MessageForm(forms.ModelForm):
             'name',
             'phone',
             'email',
-            'message'
-            'date'
+            'message',
         ]
