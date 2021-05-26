@@ -10,6 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
+import os
+import django_on_heroku
+
 from pathlib import Path
 
 import environs
@@ -138,3 +141,6 @@ SERVER_EMAIL = env('SERVER_EMAIL')
 ADMINS = [
     (env('ADMIN_NAME'), env('ADMIN_EMAIL')),
 ]
+
+
+django_on_heroku.settings(locals())
