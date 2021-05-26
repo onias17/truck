@@ -135,6 +135,6 @@ DEFAULT_FROM_EMAIL = ''
 
 EMAIL_SUBJECT_PREFIX = ''
 SERVER_EMAIL = env('SERVER_EMAIL')
-ADMINS = (
-    ('', ''), ('', '')
-) 
+ADMINS = [
+    (env('ADMIN_NAME'), env('ADMIN_EMAIL')),
+]

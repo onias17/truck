@@ -16,23 +16,23 @@ def add_message(request):
         if message_form.is_valid():
             new_message = message_form.save(commit=False)
             new_message.save()
-            # message = loader.render_to_string(
-            #     'emails/admin.html',
-            #     {
-            #         'name': new_message.name,
-            #         'phone': new_message.phone,
-            #         'email': new_message.email,
-            #         'message': new_message.message,
-            #         'date_created': new_message.date_created,
-            #     }
-            # )
-            # mail_admins(
-            #     "New Message",
-            #     "A new message has been received.",
-            #     fail_silently=False,
-            #     connection=None,
-            #     html_message=message,
-            # )
+            message = loader.render_to_string(
+                'emails/admin.html',
+                {
+                    'name': new_message.name,
+                    'phone': new_message.phone,
+                    'email': new_message.email,
+                    'message': new_message.message,
+                    'date_created': new_message.date_created,
+                }
+            )
+            mail_admins(
+                "New Message",
+                "A new message has been received.",
+                fail_silently=False,
+                connection=None,
+                html_message=message,
+            )
             html_message = loader.render_to_string(
                 'emails/client.html',
                 {
