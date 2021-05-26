@@ -31,3 +31,6 @@ def add_message(request):
         form = MessageForm()
         context = { 'form' : form }
         return render(request, 'messages/new.html', context)
+
+def message_success(request):
+    return render(request, 'messages/success.html')

@@ -8,7 +8,8 @@ body {
 
 /* nav */
 .options {
-    color: rgba(96,28,33);
+    /* color: rgba(96,28,33); */
+    color: white;
 }
 
 .brand-logo {
@@ -17,7 +18,8 @@ body {
 
 /* home */
 .home {
-    color: rgba(96,28,33);
+    /* color: rgba(96,28,33); */
+    color: white;
 }
 
 .home h1 {
@@ -32,7 +34,8 @@ body {
 
 /* about */
 .about {
-    color: rgba(96,28,33);
+    /* color: rgba(96,28,33); */
+    color: white;
 }
 
 .about h2 {
@@ -40,13 +43,43 @@ body {
     margin: 40px 0 20px 0;
 }
 
+.about p {
+    font-size: 18px;
+}
+
 /* contact */
 .contact {
-    color: rgba(96,28,33);
+    /* color: rgba(96,28,33); */
+    color: white;
 }
 
 .contact h2 {
     font-weight: 300;
+}
+
+.contact p {
+    font-size: 18px;
+}
+
+.bold {
+    color: #ffc400;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.bold:hover {
+    font-size: large;
+}
+
+.email {
+    color: #ffc400;
+    font-size: medium;
+    font-weight: bold;
+}
+  
+.email:hover {
+    text-decoration: underline;
+    font-size: large;
 }
 
 /* email */

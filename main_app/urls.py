@@ -4,5 +4,5 @@ from . import views
 urlpatterns = [
     path('', views.home, name='home'),
     # Message Routes
-    path('messages/new/', views.add_message, name='add_message')
+    path('messages/new/', views.add_message, name='add_message'),
 ]
