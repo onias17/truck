@@ -114,4 +114,31 @@ main {
 }
 
 /* NEW */
+/* new */
+#new {
+    min-height: 100vh;
+    margin-bottom: 30px;
+}
+  
+input {
+    background-color: white !important;
+}
+  
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid black !important;
+    -webkit-box-shadow: 0 1px 0 0 black !important;
+    box-shadow: 0 1px 0 0 black !important;
+}
 
+label {
+    color: white !important;
+    font-size: 1rem !important;
+}
+
+textarea {
+    background: white !important;
+}
+
+.btn {
+    background-color: rgba(96,28,33) !important;
+  }

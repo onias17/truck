@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<div class="container inquiry" id="new">
+<div class="white-text container message" id="new">
     <h1>Send Us A Message!</h1>
     <form action="{% url 'add_message' %}" method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button class="btn black-text" type="submit">Submit</button>
+        <button class="btn white-text" type="submit">Submit</button>
     </form>
 </div>
 
