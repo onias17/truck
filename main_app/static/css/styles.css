@@ -1,6 +1,6 @@
 body {
-    background: url("../images/truck.jpg");
-    background-size: cover;
+    background: url("../images/truck2.jpeg");
+    background-size: 100%;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
