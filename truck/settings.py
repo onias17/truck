@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 import os
-# import django_on_heroku
+import django_on_heroku
 
 from pathlib import Path
 
@@ -150,4 +150,4 @@ ADMINS = [
 ]
 
 
-# django_on_heroku.settings(locals())
+django_on_heroku.settings(locals())
